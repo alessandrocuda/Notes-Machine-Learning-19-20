@@ -1,0 +1,146 @@
+\documentclass{article}
+\usepackage{geometry}
+ \geometry{
+    textheight=9in,
+    textwidth=6.5in,
+    top=1in,
+    headheight=14pt,
+    headsep=25pt,
+    footskip=30pt
+ }
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[inline]{enumitem}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{subfiles}
+\usepackage{hyperref}
+\usepackage{color,soul}
+\usepackage[export]{adjustbox}
+
+\usepackage{graphicx}
+\usepackage{subfig}
+
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+
+%citation
+\usepackage{epigraph}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+ 
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+ 
+ 
+\title{Machine Learning}
+\author{Alessandro Cudazzo\\ Giulia Volpi}
+\date{September 2019}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+
+
+\begin{document}
+
+%\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%    TITELPAGINA WOORD    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%             ||               %
+%             \/               %
+\def\thesistitle{Machine Learning}
+\def\thesisauthorfirst{Alessandro Cudazzo}
+\def\thesisauthorsecond{Giulia Volpi}
+\def\thesisdate{\today}
+\def\theacademicyeas{ACADEMIC YEAR 2019/2020}
+%             /\               %
+%             ||               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%    TITELPAGINA WOORD    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcitestyle{square}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Tittle Page Start     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+	\center
+
+	\includegraphics[width=30mm]{Figure/cherubino_pant541.eps}\\[0.9cm]
+	\textsc{\Large University of Pisa}\\[0.3cm]
+	\textsc{\Large Computer Science}\\[0.6cm]
+	%\textsc{\Large 	Department of Information Engineering}\\[0.6cm]
+	\HRule \\[0.6cm]
+	%\vspace{2.5cm}
+	{ \LARGE \bfseries \thesistitle}\\[0.3cm]
+	\HRule \\[0.6cm]
+	{\large Based on Prof. Alessio Micheli's lectures}\\[0.6cm]
+	%\vspace{0.5cm}
+	{\large \thesisdate}\\[2.7cm]
+    {\Large \thesisauthorfirst \\ \vspace{0.6cm} \thesisauthorsecond}\\[4cm]
+    \vspace*{\fill}
+	{\large \theacademicyeas}\\
+	\clearpage
+\end{titlepage}
+\clearpage
+\clearpage\mbox{}\thispagestyle{empty}\clearpage\setcounter{page}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%       Tittle Page End      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+%\thispagestyle{empty}
+%\vspace*{\fill}
+\centerline{\large\bfseries Notes}
+\nobreak
+\vspace{1pc}
+\begingroup\small
+\leftskip=0.1\textwidth
+\rightskip=\leftskip
+These notes are intended only as support for the study of the subject and as slides side notes. They do not cover the whole program but only a part, to compensate for the missing parts, we recommend the use of slides and books provided by Prof. Micheli for each topic. We hope these notes will help future students and if you find any mistakes or want to help extend these notes, feel free to do so in the GitHub repo.\\
+
+\noindent \textbf{What you will find here}: Introduction to ML, Linear Model and K-NN, Neural Networks, Validation, Statistical Learning Theory (STL).\\
+
+\noindent \textbf{What's missing}: Concept Learning, SVM, Bias Variance, Deep Learning (CNN, Depp, Rand), SOM, Bayes Learning, RNN, SDL.\\
+
+\par\endgroup
+%\vspace{\fill}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\dominitoc% Initialization
+\newpage
+\enlargethispage{2\baselineskip}
+\tableofcontents
+\let\tableofcontents\relax
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subfile{lectures/1_Introduction.tex}
+\newpage
+\subfile{lectures/2_linear_model.tex}
+\newpage
+\subfile{lectures/3_k_nn.tex}
+\newpage
+\subfile{lectures/4_neural_networks.tex}
+\newpage
+\subfile{lectures/5_validation.tex}
+\newpage
+\subfile{lectures/6_SLT.tex}
+%\bibliographystyle{plain}
+%\bibliography{references}
+\end{document}
