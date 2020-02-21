@@ -5,7 +5,7 @@ These notes are intended only as support for the study of the subject and as sli
 
 **What you will find here**: Introduction to ML, Linear Model and K-NN, Neural Networks, Validation, Statistical Learning Theory (STL).
 
-**What's missing**: Concept Learning, SVM, Bias Variance, Deep Learning (CNN, Depp, Rand), SOM, Bayes Learning, RNN, SDL.
+**What's missing**: Concept Learning, SVM, Bias Variance, Deep Learning (CNN, Deep, Rand), SOM, Bayes Learning, RNN, SDL.
 
 
 ## Table of Contents 
